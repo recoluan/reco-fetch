@@ -1,5 +1,6 @@
 # reco-fetch
-Fetch for Browser
+
+适用于客户端的fetch封装
 
 ```bash
 $ npm isntall reco-fetch
@@ -16,6 +17,7 @@ import recoFetch from 'reco-fetch'
  *                        data(请求参数，所有请求方式均适用)
  *                        timeout(请求超时，默认10秒)
  */
+
 recoFetch(url, {
   method: 'post',
   headers: {},

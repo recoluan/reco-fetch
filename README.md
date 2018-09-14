@@ -1,5 +1,6 @@
 # reco-fetch
-Fetch for Browser
+
+Fetch for Browser [中文文档](./README_zh.md)
 
 ```bash
 $ npm isntall reco-fetch
@@ -16,6 +17,7 @@ import recoFetch from 'reco-fetch'
  *                        data(Request parameters, all request methods apply)
  *                        timeout(Request timeout, default 10 seconds)
  */
+
 recoFetch(url, {
   method: 'post',
   headers: {},
