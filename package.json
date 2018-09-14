@@ -1,0 +1,27 @@
+{
+  "name": "reco-fetch",
+  "version": "1.0.0",
+  "description": "Fetch for Browser",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/recoluan/reco-fetch.git"
+  },
+  "keywords": [
+    "fetch",
+    "browser"
+  ],
+  "author": "reco_luan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/recoluan/reco-fetch/issues"
+  },
+  "homepage": "https://github.com/recoluan/reco-fetch#readme",
+  "dependencies": {
+    "es6-promise": "4.2.5",
+    "whatwg-fetch": "3.0.0"
+  }
+}
