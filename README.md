@@ -1,6 +1,6 @@
 # reco-fetch
 
-Fetch for Browser [中文文档](./README_zh.md)
+Fetch for Browser [中文文档](./docs/README_zh.md)
 
 ```bash
 $ npm isntall reco-fetch
@@ -11,14 +11,14 @@ import recoFetch from 'reco-fetch'
 
 /**
  * @param url    (String) API URL
- * @param option (Object) Parameter object，incloud:
- *                        method(Request method, do not fill in the default 'get')
- *                        headers(Set request header, optional)
- *                        data(Request parameters, all request methods apply)
- *                        timeout(Request timeout, default 10 seconds)
+ * @param options (Object) Parameter objects, including:
+ *                        method  (Request method, default 'get')
+ *                        headers (Set request header, optional)
+ *                        data    (url parameters or request body, all request methods apply)
+ *                        timeout (Request timeout, default 10 seconds)
  */
 
-recoFetch(url, {
+const options = {
   method: 'post',
   headers: {},
   timeout: 1000,
@@ -26,7 +26,9 @@ recoFetch(url, {
     id: 1,
     value: 2
   }
-}). then(res => {
+}
+
+recoFetch(url, options). then(res => {
   console.log(res)
 }).catch(err => {
   console.log(err)
