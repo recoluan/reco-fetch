@@ -19,6 +19,15 @@ export default function (url, options) {
     // options.body = qs.stringify(options.body)
   }
 
+  if (options.body && options.type == 'formdata') {
+    const datas = options.body
+    const formData = new FormData()
+    for (const key in datas) {
+      formData.append(key, datas[key])
+    }
+    options.body = formData
+  }
+
   // 对非get类请求头和请求体做处理
   if (options.type == 'json' && (options.method === 'post' || options.method === 'put')) {
     options.headers['Content-Type'] = options.headers['Content-Type'] || 'application/json'
