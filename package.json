@@ -1,6 +1,6 @@
 {
   "name": "reco-fetch",
-  "version": "0.0.3",
+  "version": "1.0.1",
   "description": "Fetch for Browser",
   "main": "/src",
   "scripts": {

@@ -2,7 +2,7 @@
 
 适用于客户端的fetch封装，使用了ES6语法，或许你需要babel进行转译。
 
-## 安装
+## 安装
 
 ```bash
 $ npm isntall reco-fetch
@@ -43,7 +43,7 @@ recoFetch(url, options). then(res => {
 })
 ```
 
-## 案例
+## 案例
 
 **GET**
 
