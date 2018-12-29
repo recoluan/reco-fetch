@@ -21,7 +21,7 @@ export default function addTimeout (fetchPromise, timeout) {
     timeoutFn = function () {
       reject({
         code: 'timeOut',
-        text: '请求超时，请重试'
+        text: '请求超时！'
       })
     }
   })
