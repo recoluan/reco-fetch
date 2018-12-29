@@ -2,13 +2,13 @@
 
 Fetch for Browser, using ES6 syntax, you may need Babel to translate. [中文文档](./docs/README_zh.md)
 
-## INSTALL
+## Install
 
 ```bash
 $ npm isntall reco-fetch
 ```
 
-## CONFIG
+## Config
 
 In addition to the parameters given below, please combine other parameters [**MDN**](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch#Supplying_request_options) .
 
@@ -43,7 +43,7 @@ recoFetch(url, options). then(res => {
 })
 ```
 
-## EXAMPLE
+## Example
 
 **GET**
 
