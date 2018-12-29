@@ -10,7 +10,7 @@ $ npm isntall reco-fetch
 
 ## 配置
 
-除了下面给出的参数，其他参数请结合  [**MDN**](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch#Supplying_request_options)
+除了下面给出的参数，其他参数请结合  [MDN](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch#Supplying_request_options)
 
 ```javascript
 import recoFetch from 'reco-fetch'
