@@ -10,7 +10,8 @@ import addTimeout from './models/timeOut'
  */
 const recoFetch = (url, option = {}) => {
   // 设置请求超时的时间，默认10秒
-  const timeout = option.timeout || 10000
+  const timeout = option.timeout || null
+  console.log(222222, timeout)
   const { recoUrl, recoOptions } = handleParams(url, option)
 
   return addTimeout(fetch(recoUrl, recoOptions), timeout)

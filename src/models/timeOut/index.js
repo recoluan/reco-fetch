@@ -1,7 +1,8 @@
 // import { parseJSON } from '../../utils/handleData.js'
-function parseJSON (response) {
-  return response.json()
-}
+import handleResult from '../handleResult/'
+// function parseJSON (response) {
+//   return response.json()
+// }
 
 /**
  * 增加超时处理：fetch本身是没有请求超时处理的，所以可以通过
@@ -10,9 +11,9 @@ function parseJSON (response) {
  */
 export default function addTimeout (fetchPromise, timeout) {
   // 如果timeout为null就返回请求本身
-  // if (timeout == null) {
-  //   return fetchPromise
-  // }
+  if (timeout == null) {
+    return handleResult(fetchPromise)
+  }
 
   let timeoutFn = null
 
@@ -34,35 +35,7 @@ export default function addTimeout (fetchPromise, timeout) {
 
   setTimeout(function () {
     timeoutFn()
-  }, timeout)
+  }, Number(timeout))
 
-  const racePromiseResult = new Promise((resolve, reject) => {
-    let status = 0
-
-    racePromise
-      .then(response => {
-        status = response.status
-        return response
-      })
-      .then(parseJSON)
-      .then(response => {
-        // 将状态码添加到返回结果中，以备后用
-        response.status = status
-
-        // 如果返回码在300到900之间，将以错误返回，如果需要对错误统一处理，可以放在下面判断中
-        if (/^[3-9]\d{2}$/.test(response.status)) {
-          reject(response)
-        }
-
-        // 否则以正确值返回
-        resolve(response)
-      })
-      .catch(error => {
-        // 请求出错则报错 recoFetch Error: ***
-        console.log('recoFetch Error:', error)
-      })
-  })
-
-  // 将racePromise的结果返回
-  return racePromiseResult
+  return handleResult(racePromise)
 }
