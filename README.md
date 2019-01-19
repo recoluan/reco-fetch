@@ -1,6 +1,6 @@
 # reco-fetch
 
-Fetch for Browser, using ES6 syntax, you may need Babel to translate. [中文文档](./docs/README_zh.md)
+Fetch for Browser, using ES6 syntax, you may need Babel to translate.
 
 ## Install
 
@@ -8,13 +8,25 @@ Fetch for Browser, using ES6 syntax, you may need Babel to translate. [中文文
 $ npm isntall reco-fetch
 ```
 
+## Including reco-fetch
+
+**Script tag**
+
+```html
+<script src="/node_modules/reco-fetch/dist/recoFetch.min.js"></script>
+```
+
+**Import**
+
+```javscript
+import recoFetch from 'reco-fetch'
+```
+
 ## Config
 
 In addition to the parameters given below, please combine other parameters [MDN](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch#Supplying_request_options) .
 
 ```javascript
-import recoFetch from 'reco-fetch'
-
 /**
  * @param {String, must} url    API URL
  * @param {String, must} options Parameter objects, including:
