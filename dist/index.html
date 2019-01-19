@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <!-- <script src="./recofetch.js"></script> -->
+  <script>
+    // import recoFetch from '../lib/index.js'
+    // const recoFetch = require('../lib/index.js').default
+    console.log(require('../lib/index.js'))
+    recoFetch('http://admintest.happymmall.com/product/list.do').then(res => {
+      console.log(1234321, res)
+    })
+  </script>
+</body>
+</html>

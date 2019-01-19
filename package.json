@@ -1,8 +1,8 @@
 {
   "name": "reco-fetch",
-  "version": "1.0.3",
+  "version": "1.0.5",
   "description": "Fetch for Browser",
-  "main": "/src",
+  "main": "/index.js",
   "scripts": {
     "start": "gulp start --env development",
     "final": "gulp final --env development",
