@@ -24,7 +24,7 @@ import recoFetch from 'reco-fetch'
 
 ## Config
 
-In addition to the parameters given below, please combine other parameters [MDN](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch#Supplying_request_options) .
+In addition to the parameters given below, please combine other parameters [MDN](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch#Supplying_request_options).
 
 ```javascript
 /**
