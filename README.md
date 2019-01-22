@@ -1,6 +1,6 @@
 # reco-fetch
 
-Fetch for Browser, using ES6 syntax, you may need Babel to translate.
+Fetch for browser.
 
 ## Install
 
