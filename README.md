@@ -13,13 +13,13 @@ $ npm isntall reco-fetch
 
 ## Including reco-fetch
 
-**Script tag**
+### Script tag
 
 ```html
 <script src="/node_modules/reco-fetch/dist/recoFetch.min.js"></script>
 ```
 
-**Import**
+### Import
 
 ```javscript
 import recoFetch from 'reco-fetch'
