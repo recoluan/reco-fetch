@@ -60,7 +60,7 @@ recoFetch(url, options). then(res => {
 
 ## Example
 
-**GET**
+### GET
 
 ```javascript
 const options = {
@@ -78,7 +78,7 @@ recoFetch(url, options). then(res => {
 })
 ```
 
-**POST JSON**
+### POST JSON
 
 ```javascript
 const options = {
@@ -124,7 +124,7 @@ recoFetch(url, options). then(res => {
 })
 ```
 
-**PUT**
+### PUT
 
 ```javascript
 const options = {
@@ -153,7 +153,7 @@ recoFetch(url, options). then(res => {
 })
 ```
 
-**DELETE**
+### DELETE
 
 ```javascript
 const options = {
@@ -171,7 +171,7 @@ recoFetch(url, options). then(res => {
 })
 ```
 
-**uploadFile**
+### uploadFile
 
 ```javascript
 const fileField = document.querySelector("input[type='file']")
