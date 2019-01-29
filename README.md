@@ -1,5 +1,8 @@
 # reco-fetch
 
+![es6-promise](https://img.shields.io/badge/es6--promise-4.2.5-brightgreen.svg)
+![whatwg-fetch](https://img.shields.io/badge/whatwg--fetch-3.0.0-orange.svg)
+
 Fetch for browser.
 
 ## Install
@@ -199,3 +202,6 @@ recoFetch(url, options). then(res => {
   console.log(err)
 })
 ```
+
+## License
+[MIT](https://github.com/recoluan/reco-fetch/blob/master/LICENSE)
