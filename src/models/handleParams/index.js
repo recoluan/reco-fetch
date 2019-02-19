@@ -30,7 +30,13 @@ export default function (url, options) {
 
   // 对非get类请求头和请求体做处理
   if (options.type == 'json' && (options.method === 'post' || options.method === 'put')) {
-    options.headers['Content-Type'] = options.headers['Content-Type'] || 'application/json'
+    if (!options.headers) {
+      options.headers = {
+        'Content-Type': 'application/json'
+      }
+    } else if (!options.headers['Content-Type']) {
+      options.headers['Content-Type'] = 'application/json'
+    }
   }
 
   return { recoUrl: url, recoOptions: options }
